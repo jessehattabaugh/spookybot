@@ -5,7 +5,10 @@
   },
   "description": "a bot that's spooky",
   "devDependencies": {
-    "serve": "^11.3.0"
+    "kill-port": "^1.6.0",
+    "lighthouse-ci": "^1.10.0",
+    "serve": "^11.3.0",
+    "start-server-and-test": "^1.10.8"
   },
   "homepage": "https://github.com/jessehattabaugh/spookybot#readme",
   "license": "MIT",
@@ -16,8 +19,10 @@
     "url": "git+https://github.com/jessehattabaugh/spookybot.git"
   },
   "scripts": {
+    "smoke": "lighthouse-ci http://localhost:5000 --score=30",
     "start": "serve",
-    "test": "echo \"Don't you judge me\" && exit 1"
+    "stop": "kill-port 5000",
+    "test": "npm stop && start-test 5000 smoke"
   },
   "version": "0.0.0"
 }
