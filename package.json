@@ -1,0 +1,23 @@
+{
+  "author": "Jesse Hattabaugh",
+  "bugs": {
+    "url": "https://github.com/jessehattabaugh/spookybot/issues"
+  },
+  "description": "a bot that's spooky",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  },
+  "homepage": "https://github.com/jessehattabaugh/spookybot#readme",
+  "license": "MIT",
+  "name": "spookybot",
+  "public": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessehattabaugh/spookybot.git"
+  },
+  "scripts": {
+    "start": "serve",
+    "test": "echo \"Don't you judge me\" && exit 1"
+  },
+  "version": "0.0.0"
+}
