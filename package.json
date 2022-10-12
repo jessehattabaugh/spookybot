@@ -6,7 +6,7 @@
   "description": "a bot that's spooky",
   "devDependencies": {
     "kill-port": "^1.6.0",
-    "lighthouse-ci": "^1.10.0",
+    "lighthouse-ci": "^1.13.1",
     "serve": "^11.3.0",
     "start-server-and-test": "^1.10.8"
   },
